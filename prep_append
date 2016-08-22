@@ -1,0 +1,10 @@
+# "enum" is used as a Java identifier, which is prohibited in Java >= 1.5
+python3 /usr/share/java-utils/pom_editor.py pom_add_plugin     org.apache.maven.plugins:maven-javadoc-plugin . "
+
+    <configuration><source>1.3</source></configuration>"
+
+
+python3 /usr/share/java-utils/mvn_file.py  : apache-commons-lang commons-lang
+python3 /usr/share/java-utils/mvn_alias.py : org.apache.commons: lang:lang
+# this package needs to be compiled with -source 1.3 option
+python3 /usr/share/java-utils/mvn_config.py buildSettings/compilerSource 1.3
