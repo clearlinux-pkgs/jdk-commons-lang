@@ -4,7 +4,7 @@
 #
 Name     : jdk-commons-lang
 Version  : 2.6
-Release  : 2
+Release  : 3
 URL      : http://archive.apache.org/dist/commons/lang/source/commons-lang-2.6-src.tar.gz
 Source0  : http://archive.apache.org/dist/commons/lang/source/commons-lang-2.6-src.tar.gz
 Summary  : No detailed summary available
@@ -141,7 +141,7 @@ python3 /usr/share/java-utils/mvn_config.py buildSettings/compilerSource 1.3
 python3 /usr/share/java-utils/mvn_build.py
 
 %install
-xmvn-install  -R .xmvn-reactor -n commons-lang-2.6-src -d %{buildroot}
+xmvn-install  -R .xmvn-reactor -n apache-commons-lang -d %{buildroot}
 
 %files
 %defattr(-,root,root,-)
@@ -150,6 +150,6 @@ xmvn-install  -R .xmvn-reactor -n commons-lang-2.6-src -d %{buildroot}
 %defattr(-,root,root,-)
 /usr/share/java/apache-commons-lang.jar
 /usr/share/java/commons-lang.jar
-/usr/share/maven-metadata/commons-lang-2.6-src.xml
+/usr/share/maven-metadata/apache-commons-lang.xml
 /usr/share/maven-poms/apache-commons-lang.pom
 /usr/share/maven-poms/commons-lang.pom
