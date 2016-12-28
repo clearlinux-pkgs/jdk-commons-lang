@@ -4,7 +4,7 @@
 #
 Name     : jdk-commons-lang
 Version  : 2.6
-Release  : 1
+Release  : 2
 URL      : http://archive.apache.org/dist/commons/lang/source/commons-lang-2.6-src.tar.gz
 Source0  : http://archive.apache.org/dist/commons/lang/source/commons-lang-2.6-src.tar.gz
 Summary  : No detailed summary available
